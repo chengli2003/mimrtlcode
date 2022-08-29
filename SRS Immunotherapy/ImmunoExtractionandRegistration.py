@@ -396,9 +396,6 @@ for fw_subject in fw_subjects:
     if fw_subject.label not in PreSRSRegfiles.keys() or fw_subject.label == '1947241':
         continue
 
-    if fw_subject.label != '0842320':
-        continue
-
     # Initialize paths and variables
     subject = fw_subject.label
     subject_path = os.path.join(image_path, subject)
